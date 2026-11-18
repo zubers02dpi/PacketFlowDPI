@@ -1,0 +1,21 @@
+# build output
+build/
+*.apk
+*.aab
+
+# signing material
+debug.keystore
+*.jks
+*.keystore
+
+# local SDK / IDE settings
+local.properties
+.idea/
+.vscode/
+*.iml
+.gradle/
+
+# OS noise
+.DS_Store
+Thumbs.db
+out/

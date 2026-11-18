@@ -1,0 +1,22 @@
+PacketFlowDPI
+=============
+
+This repository contains the open-source part of PacketFlowDPI:
+
+  * the Android TV user interface;
+  * the generic VPN transport: VpnService, the tun loop, the userspace
+    TCP state machine, the UDP relay, and the IPv4/TCP/UDP packet helpers;
+  * a minimal TLS ClientHello/SNI parser.
+
+The DPI-desync engine is proprietary and is NOT included in this repository.
+In the open build, Strategy.plan() returns the payload as a single piece and
+Desync.writeFirst() writes it unchanged. The open build therefore does not
+bypass DPI.
+
+The MIT License in LICENSE applies only to the open-source part listed above.
+It does not apply to the proprietary engine, its parameters, its ordering
+logic or any future closed-source components. All rights to those components
+remain with the author.
+
+The name "PacketFlowDPI" identifies the project. No trademark rights are
+granted by this notice or by the MIT License.
